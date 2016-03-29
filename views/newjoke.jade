@@ -1,0 +1,17 @@
+extends layout
+
+
+
+block content
+    a(href='/') home
+        br
+
+    h1 first i got the joke from the get metode, and i just inserted it into the database by a
+    h1 collection.insert(the joke i got from the body from the get call)
+
+    h3= title
+    form#form_add_joke(name="addjoke",method="post",action="/addjoke")
+        span Enter Joke
+        span &nbsp;
+        input#input_name(type="text",placeholder="write your joke here",name="joke")
+        button#submit_jokes(type="submit")

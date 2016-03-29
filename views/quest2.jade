@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    a(href='/') home
+        br
+    h1 question 2
+    h1 its fast, its possible to upscale, its build to handle bigData
+
+    h1 Cons. Not good if you use transactions where you need data there is not knowed by you, like a bank, where you need to tranfer money from one persons acount to another acount.
+    h1 Right here there are 3 parts involved.. acount owner, the bank and the receiver of money.
+    h1 If something goes wrong in this little exsample, will w eget an error, but it will not rolback even if we used the $isolated metode.
+    h1 when its upscaled, you cant be sure to get the newest data, there will somehow be some datalose
+

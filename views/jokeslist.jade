@@ -1,0 +1,24 @@
+extends layout
+
+
+block content
+    a(href='/') home
+            br
+    h1 I have queryed this very simpel, this is just a collection.find({})
+    h1 this will find every jokes in my db, thats because i left this { emty }
+    h3.
+    jokes
+    ul
+        each jokes,i in jokeslist
+            li#joke_list_item
+            a("#") #{jokes.joke}
+            a("#") #{jokes._id}
+
+            button(action='jokes/{jokes._id}' type="submit") Remove
+
+
+
+
+
+
+
